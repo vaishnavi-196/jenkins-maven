@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Compile and clean') { 
             steps {
-                sh "rm -rf jenkins-maven"
-                sh "git clone https://github.com/vaishnavi-196/jenkins-maven.git"
+                sh "printenv"
                 sh "mvn clean compile" 
             }
         }
